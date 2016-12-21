@@ -1,0 +1,173 @@
+a {
+  color: inherit;
+  text-decoration: none; }
+
+body {
+  font-family: 'Noto Sans KR', Sans-serif;
+  min-width: 320px;
+  line-height: 1.5em; }
+
+.wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+header {
+  position: relative;
+  margin-top: 40px; }
+
+.logo {
+  text-align: center; }
+  .logo a {
+    display: inline-block;
+    width: 100px;
+    height: 68px;
+    background: url(../image/logo.svg) no-repeat;
+      background-size: contain; }
+
+.menu-btn {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  background-color: transparent;
+  border: none;
+  width: 20px;
+  height: 30px; }
+  .menu-btn .bar, .menu-btn::before, .menu-btn::after {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-bottom: 4px;
+    border-top: 2px solid #000; }
+
+main .intro {
+  box-sizing: border-box;
+  padding-top: 150px;
+  height: calc(100vh - 109px);
+  text-align: center; }
+  main .intro strong {
+    font-size: 24px;
+    font-weight: bold; }
+    main .intro strong:hover {
+      color: #f48da1; }
+  main .intro .contact-me {
+    margin-top: 100px; }
+    main .intro .contact-me a {
+      display: block;
+      font-size: 14px; }
+      main .intro .contact-me a:hover {
+        color: #f48da1; }
+
+main h2 {
+  text-align: left;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.main-wrapper {
+  margin-top: 40px; }
+  .main-wrapper ul::after {
+    content: '';
+    display: block;
+    clear: both; }
+  .main-wrapper li {
+    margin-bottom: 30px; }
+    @media (min-width: 768px) {
+      .main-wrapper li {
+        float: left;
+        width: 50%; }
+        .main-wrapper li:nth-child(odd) .contents {
+          margin-right: 15px; }
+        .main-wrapper li:nth-child(even) .contents {
+          margin-left: 15px; } }
+
+.contents {
+  position: relative;
+  width: 100%;
+  padding-bottom: 90%;
+  background-size: cover;
+  background-position: 50% 0;
+  background-color: #000; }
+  @media (min-width: 768px) {
+    .contents {
+      padding-bottom: 75%; } }
+  .contents.fx {
+    background: url(../image/fx.jpg) no-repeat;
+      background-size: cover;
+      background-position: 50% 0; }
+  .contents.golden {
+    background: url(../image/golden.jpg) no-repeat;
+      background-size: cover;
+      background-position: 50% 0; }
+  .contents.arbuzz {
+    background: url(../image/arbuzz.jpg) no-repeat;
+      background-size: cover;
+      background-position: 50% 0; }
+  .contents.holzweiler {
+    background: url(../image/holzwelier.jpg) no-repeat;
+      background-size: cover;
+      background-position: 50% 0; }
+  .contents .contents-project {
+    position: absolute;
+    visibility: hidden;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    padding-bottom: 75%;
+    z-index: 20;
+    background-color: #fff;
+    color: #000;
+    border: 15px solid currentColor;
+    transition-property: left, top;
+    transition-duration: 0.3s;
+    padding-top: 7%;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box; }
+    @media (min-width: 768px) {
+      .contents .contents-project {
+        padding-bottom: 65%; } }
+    .contents .contents-project h4 {
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 1.25em;
+      margin-bottom: 4px;
+      letter-spacing: -2px; }
+      @media (min-width: 768px) {
+        .contents .contents-project h4 {
+          font-size: 2em; } }
+    .contents .contents-project hr {
+      display: inline-block;
+      width: 100px;
+      border: none;
+      background-color: none;
+      border-top: 4px solid currentColor; }
+    .contents .contents-project p {
+      margin-top: 15px;
+      font-size: 12px;
+      line-height: 1.5em; }
+      @media (min-width: 768px) {
+        .contents .contents-project p {
+          font-size: 14px; } }
+      .contents .contents-project p .link-list {
+        display: block;
+        margin-top: 50px; }
+      .contents .contents-project p .go-to-link {
+        display: block;
+        color: #000; }
+        .contents .contents-project p .go-to-link:hover {
+          color: #f48da1;
+          text-decoration: underline; }
+  .contents:hover {
+    background: #000; }
+    .contents:hover .contents-project {
+      visibility: visible;
+      left: 15px;
+      top: 15px; }
+
+footer {
+  height: 50px;
+  margin-top: 50px;
+  font-size: 12px;
+  text-align: center; }
